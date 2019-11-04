@@ -11,8 +11,8 @@ Generating a distance matrix (A good way to do this is to use sklearn.DistanceMe
          [0, 2, 1]]
     dist_mat = dist.pairwise(X)
 
-Now that we have our distance matrix, we can now use construct a neighbour joining tree, giving some labels for the different
-samples:
+Now that we have our distance matrix, we can now use it to construct a neighbour joining tree, 
+giving some labels for the different samples:
 
     import numpy
     import TreeMethods.TreeBuild as TB
