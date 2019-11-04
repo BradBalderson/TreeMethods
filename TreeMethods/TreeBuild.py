@@ -59,11 +59,7 @@ def updateSimMatrix(sims, avgSims, i, j, labels, nIter):
     #Making the new similarity matrix, with the new node representing the fusion
     #between i and j represented on the first row and column
     newSims = numpy.zeros( (sims.shape[0]-1, sims.shape[0]-1) )
-    print(sims.shape)
-    print(remaining)
-    print(i,j)
-    print(sims)
-    print("\n")
+    
     newSims[0,:] = [0]+[(sims[i,k]+sims[j,k]-sims[i,j])/2 for k in remaining]
     newSims[:,0] = newSims[0,:]
     #Rest of the matrix is the same, so just repopulating:

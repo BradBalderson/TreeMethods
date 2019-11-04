@@ -1,5 +1,9 @@
 This repository stores a basic implementation for creating a neighbour joining tree from a given distance or similarity matrix.
 
+Install with:
+
+    pip install TreeMethods
+
 Generating a distance matrix (A good way to do this is to use sklearn.DistanceMetrics with real data):
 
     from sklearn.neighbors import DistanceMetric
